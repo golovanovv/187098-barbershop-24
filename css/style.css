@@ -1,20 +1,29 @@
 body {
 	margin: 0;
 	padding: 0;
+
 	font-family: "PT Sans Narrow", Arial, sans-serif;
 	font-size: 14px;
 	line-height: 24px;
 	font-weight: 700;
 	color: #ffffff;
 	text-transform: uppercase;
+
 	background-color: #000000;
 	background-image: url("img/background.jpg");
 	background-position: top center;
 	background-repeat: no-repeat;
 }
 
+.container {
+	width: 940px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
 .inner-page {
 	color: #000000;
+
 	background-color: #f9f6f3;
 	background-image: url("img/pattern-light.jpg");
 	background-position: 0 0;
@@ -64,6 +73,7 @@ body {
 
 .filter-input:disabled + label {
 	color: #000000;
+
 	opacity: 0.5;
 }
 
@@ -97,6 +107,7 @@ body {
 	text-align: center;
 	font-size: 14px;
 	line-height: 20px;
+
 	background-color: #e5e5e5;
 }
 
@@ -111,25 +122,28 @@ body {
 
 .pagination-item a {
 	color: #ffffff;
+
 	background-color: #000000;
 }
 
 .pagination-item a:hover,
 .pagination-item a:focus,
 .pagination-item a:active {
-  background-color: #663d15;
+  	background-color: #663d15;
 }
 
 .pagination-item-current a {
-  color: #000000;
-  background-color: #ffffff;
+  	color: #000000;
+
+  	background-color: #ffffff;
 }
 
 .pagination-item-current a:hover,
 .pagination-item-current a:focus,
 .pagination-item-current a:active {
-  color: #000000;
-  background-color: #ffffff;
+  	color: #000000;
+
+  	background-color: #ffffff;
 }
 
 .product-photo-preview {
@@ -149,6 +163,7 @@ body {
 .product-price b {
 	line-height: 20px;
 	text-align: center;
+
 	background-color: #e5e5e5;
 }
 
@@ -166,10 +181,43 @@ a {
 }
 
 .main-navigation {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
 	font-size: 16px;
 	color: #ffffff;
 	line-height: 20px;
+
 	background-color: #000000;
+}
+
+.main-header-logo {
+	order: 2;
+}
+
+.main-navigation-wrapper {
+	width: 100%;
+	margin-bottom: 60px;
+
+	background-color: #000000;
+}
+
+.main-navigation-wrapper .container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.site-navigation {
+	width: 620px;
+	margin: 0;
+	padding: 0;
+}
+
+.user-navigation {
+	width: 140px;
+	margin: 0;
+	padding: 0;
 }
 
 .site-navigation,
@@ -189,11 +237,22 @@ a {
 	background-color: #242424;
 }
 
+.features {
+	margin-bottom: 80px;
+}
+
 .features-list {
+	display: flex;
+	justify-content: space-between;
+	margin: 0;
+	padding: 0;
+
 	list-style: none;
 }
 
 .feature-item {
+	width: 300px;
+
 	text-align: center;
 }
 
@@ -203,7 +262,13 @@ a {
 }
 
 .index-columns {
+	display: flex;
+	justify-content: space-between;
+	padding: 50px 80px;
+	margin-bottom: 35px;
+
 	color: #000000;
+
 	background-color: #f8f5f2;
 	background-image: url("img/pattern-light.jpg");
 	background-position: 0 0;
@@ -215,12 +280,20 @@ a {
 	line-height: 42px;
 }
 
+.news {
+	width: 380px;
+}
+
 .news-list {
 	list-style: none;
 }
 
 .news-list time {
 	text-transform: none;
+}
+
+.gallery {
+	width: 300px;
 }
 
 .gallery-content {
@@ -231,11 +304,12 @@ a {
 .button {
 	font: inherit;
 	text-align: center;
-	background-color: #000000;
 	color: #ffffff;
-	border: none;
 	vertical-align: middle;
 	text-transform: uppercase;
+
+	background-color: #000000;
+	border: none;	
 }
 
 .button:hover,
@@ -244,8 +318,17 @@ a {
 	background-color: #663d15;
 }
 
+.contacts {
+	width: 380px;
+}
+
+.appointment {
+	width: 300px;
+}
+
 .appointment-item input {
 	font: inherit;
+
 	border: 2px solid #000000;
 	background-color: transparent;
 }
@@ -255,11 +338,25 @@ a {
 }
 
 .main-footer {
+	margin-top: 65px;
+	padding: 60px 0;
+
 	color: #ffffff;
+
 	background-image: url("img/pattern-dark.jpg");
 	background-color: #212121;
 	background-position: 0 0;
 	background-repeat: repeat;
+}
+
+.main-footer .container {
+	display: flex;
+}
+
+.footer-contacts {
+	margin: 0;
+	width: 320px;
+	margin-right: 80px;
 }
 
 .footer-contacts a {
@@ -274,6 +371,7 @@ a {
 
 .footer-social {
 	text-align: center;
+	width: 145px;
 }
 
 .footer-social ul {
@@ -285,17 +383,25 @@ a {
 }
 
 .footer-copyright {
+	width: 150px;
+	margin: 0;
+	margin-left: auto;
+
 	text-align: center;
 }
 
 .footer-copyright .button:hover,
 .footer-copyright .button:focus {
 	color: #000000;
+
 	background-color: #ffffff;
 }
 
 .modal {
+	display: none;
+
 	color: #000000;
+
 	background-color: #f8f3f0;
 	background-image: url("img/pattern-light.jpg");
 	background-position: 0 0;
@@ -312,6 +418,7 @@ a {
 	font: inherit;
 	color: #000000;
 	text-transform: uppercase;
+
 	background-color: #f9f6f3;
 	border: 2px solid #000000;
 }
